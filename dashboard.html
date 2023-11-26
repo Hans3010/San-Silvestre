@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi página web</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <body>
+    <div class="horizontal-container">
+      <h1>DASHBOARD</h1>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </div>
+
+    <div class="vertical-container">
+      <div class="logo-container text-center mb-4">
+        <img src="./img/logo_texto.png" alt="Logo" />
+      </div>
+      <div class="options-container">
+        <h5>RESERVAS</h5>
+        <ul class="sub-options">
+          <li><a href="#">Ver Citas</a></li>
+          <li><a href="#">Crear Citas</a></li>
+        </ul>
+        <h5>PACIENTES</h5>
+        <ul class="sub-options">
+          <li><a href="#">Nuevo</a></li>
+          <li><a href="#">Ver</a></li>
+          <li><a href="#">Historial</a></li>
+        </ul>
+        <h5>PERSONAL</h5>
+        <ul class="sub-options">
+          <li>
+            <a href="#">Médico</a>
+            <ul class="sub-options">
+              <li><a href="#">Gestionar Médicos</a></li>
+              <li><a href="#">Horarios</a></li>
+              <li><a href="#">Consultorios</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Administrativos</a>
+            <ul class="sub-options">
+              <li><a href="#">Gestionar Administrativos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Apoyo Clínico</a>
+            <ul class="sub-options">
+              <li><a href="#">Gestionar Personal de Apoyo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Servicios Generales</a>
+            <ul class="sub-options">
+              <li><a href="#">Gestionar Personal de Servicio</a></li>
+            </ul>
+          </li>
+        </ul>
+        <h5>CONFIGURACION</h5>
+        <ul class="sub-options">
+          <li><a href="#">Cambiar Contraseña</a></li>
+          <li><a href="#">Idioma</a></li>
+          <li><a href="#">Soporte Técnico</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="contenedor">
+        <div class="cajita rojo">
+          <h5>PACIENTES ATENDIDOS</h5>
+          <h2>2589</h2>
+        </div>
+        <div class="cajita amarillo">
+          <h5>HORAS ATENDIDAS</h5>
+          <h2>12057</h2>
+        </div>
+        <div class="cajita cyan">
+          <h5>NUMERO DE CIRUGIAS</h5>
+          <h2>398</h2>
+        </div>
+        <div class="cajita aqua">
+          <h5>
+            TIEMPO DE ESPERA <br />
+            EN PROMEDIO
+          </h5>
+          <h2>29 min</h2>
+        </div>
+      </div>
+      <div class="contenedor2">
+        <div class="imagenes uno">
+          <img src="./img/reservas.png" alt="" />
+          <p>RESERVAS</p>
+        </div>
+        <div class="imagenes dos">
+          <img src="./img/icono paciente.png" alt="" />
+          <p>PACIENTES</p>
+        </div>
+        <div class="imagenes tres">
+          <img src="./img/icono medico.png" alt="" />
+          <p>PERSONAL</p>
+        </div>
+        <div class="imagenes cuatro">
+          <img src="./img/icono _confiuracion.png" alt="" />
+          <p>CONFIGURACION</p>
+        </div>
+      </div>
+      <div class="contenedor2">
+        <div class="resumen">
+          <img src="./img/resumen.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

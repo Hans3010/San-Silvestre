@@ -1,0 +1,123 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 14px;
+}
+
+.horizontal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #126611;
+  height: 60px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-left: 200px;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #126611;
+  width: 300px;
+  height: 100vh;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto; /* Agregado para habilitar la barra de desplazamiento vertical */
+}
+
+.logo-container img {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.options-container h5 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.sub-options li a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.sub-options {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 0;
+}
+.content-container {
+  margin-left: 300px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.content-container::before {
+  content: “”;
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid gray;
+  position: absolute;
+  left: 50%; /* para centrar la línea */
+  top: 0;
+}
+.sub-options li {
+  margin-bottom: 2px;
+  list-style: none;
+}
+
+.sub-options a {
+  font-size: 12px;
+  color: #fff;
+}
+
+.contenedor {
+  width: 30%; /* el ancho del div de la izquierda */
+  float: left; /* flota a la izquierda */
+}
+
+.contenedor2 {
+  width: 70%; /* el ancho del div de la derecha */
+  float: left; /* flota a la izquierda */
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+  body {
+    font-size: 6px;
+  }
+  .vertical-container {
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .logo-container img {
+    height: 75px;
+    margin-top: 20px;
+  }
+  .content-container {
+    margin-left: 250px;
+    padding: 20px;
+    margin-right: 10px;
+    position: relative;
+  }
+  .content-container::before {
+    content: “”;
+    height: 80%;
+    width: 1px;
+    border-left: 1px solid gray;
+    position: absolute;
+    left: 50%; /* para centrar la línea */
+    top: 0;
+  }
+}
